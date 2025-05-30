@@ -26,87 +26,68 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Navigation Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Onboarding */}
+        {/* Main Authentication Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
+          {/* Start Journey */}
           <Card className="bg-card/60 backdrop-blur-sm border-glow-purple/30 hover:border-glow-purple/60 transition-all duration-300 hover:scale-105 cursor-pointer fade-in-up"
                 onClick={() => navigate('/onboarding')}>
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-glow-purple to-glow-pink rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🌟</span>
+            <CardContent className="p-8 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-glow-purple to-glow-pink rounded-3xl mx-auto mb-6 flex items-center justify-center">
+                <span className="text-3xl">🌟</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Start Your Journey</h3>
-              <p className="text-muted-foreground text-sm">Begin with our interactive onboarding</p>
+              <h3 className="text-2xl font-semibold mb-3">Start Your Journey</h3>
+              <p className="text-muted-foreground mb-4">Begin with our interactive onboarding experience</p>
+              <Button className="glow-button bg-gradient-to-br from-glow-purple to-glow-pink hover:scale-105 transition-all duration-300">
+                Get Started
+              </Button>
             </CardContent>
           </Card>
 
-          {/* Sign Up */}
-          <Card className="bg-card/60 backdrop-blur-sm border-glow-pink/30 hover:border-glow-pink/60 transition-all duration-300 hover:scale-105 cursor-pointer fade-in-up"
-                onClick={() => navigate('/signup')}>
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-glow-pink to-glow-orange rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🎨</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Create Account</h3>
-              <p className="text-muted-foreground text-sm">Join the GlowUp community</p>
-            </CardContent>
-          </Card>
-
-          {/* Login */}
+          {/* Sign In */}
           <Card className="bg-card/60 backdrop-blur-sm border-glow-cyan/30 hover:border-glow-cyan/60 transition-all duration-300 hover:scale-105 cursor-pointer fade-in-up"
                 onClick={() => navigate('/login')}>
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-glow-cyan to-glow-green rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🔑</span>
+            <CardContent className="p-8 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-glow-cyan to-glow-green rounded-3xl mx-auto mb-6 flex items-center justify-center">
+                <span className="text-3xl">🔑</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Sign In</h3>
-              <p className="text-muted-foreground text-sm">Welcome back to your journey</p>
-            </CardContent>
-          </Card>
-
-          {/* Dashboard */}
-          <Card className="bg-card/60 backdrop-blur-sm border-glow-yellow/30 hover:border-glow-yellow/60 transition-all duration-300 hover:scale-105 cursor-pointer fade-in-up"
-                onClick={() => navigate('/dashboard')}>
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-glow-yellow to-glow-orange rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🏠</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Dashboard</h3>
-              <p className="text-muted-foreground text-sm">Your personalized wellness hub</p>
-            </CardContent>
-          </Card>
-
-          {/* Mood Tracker */}
-          <Card className="bg-card/60 backdrop-blur-sm border-glow-green/30 hover:border-glow-green/60 transition-all duration-300 hover:scale-105 cursor-pointer fade-in-up"
-                onClick={() => navigate('/mood-tracker')}>
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-glow-green to-glow-cyan rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">😊</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Mood Tracker</h3>
-              <p className="text-muted-foreground text-sm">Track your daily emotions</p>
-            </CardContent>
-          </Card>
-
-          {/* Community */}
-          <Card className="bg-card/60 backdrop-blur-sm border-glow-purple/30 hover:border-glow-purple/60 transition-all duration-300 hover:scale-105 cursor-pointer fade-in-up"
-                onClick={() => navigate('/community')}>
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-glow-purple to-glow-pink rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">👥</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Community</h3>
-              <p className="text-muted-foreground text-sm">Connect with others</p>
+              <h3 className="text-2xl font-semibold mb-3">Welcome Back</h3>
+              <p className="text-muted-foreground mb-4">Continue your wellness journey</p>
+              <Button className="glow-button bg-gradient-to-br from-glow-cyan to-glow-green hover:scale-105 transition-all duration-300">
+                Sign In
+              </Button>
             </CardContent>
           </Card>
         </div>
 
+        {/* App Features Preview */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold mb-6">What awaits you in GlowUp</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="bg-card/40 backdrop-blur-sm rounded-xl p-4 border border-muted/20">
+              <div className="text-3xl mb-2">😊</div>
+              <div className="text-sm font-medium">Mood Tracking</div>
+            </div>
+            <div className="bg-card/40 backdrop-blur-sm rounded-xl p-4 border border-muted/20">
+              <div className="text-3xl mb-2">🎯</div>
+              <div className="text-sm font-medium">Goal Setting</div>
+            </div>
+            <div className="bg-card/40 backdrop-blur-sm rounded-xl p-4 border border-muted/20">
+              <div className="text-3xl mb-2">👥</div>
+              <div className="text-sm font-medium">Community</div>
+            </div>
+            <div className="bg-card/40 backdrop-blur-sm rounded-xl p-4 border border-muted/20">
+              <div className="text-3xl mb-2">💬</div>
+              <div className="text-sm font-medium">AI Support</div>
+            </div>
+          </div>
+        </div>
+
         {/* CTA Button */}
-        <div className="text-center mt-12">
+        <div className="text-center">
           <Button 
             onClick={() => navigate('/onboarding')}
             size="lg"
-            className="glow-button bg-gradient-glow hover:scale-105 transition-all duration-300 text-lg px-8 py-6 rounded-2xl font-semibold"
+            className="glow-button bg-gradient-glow hover:scale-105 transition-all duration-300 text-lg px-8 py-6 rounded-2xl font-semibold animate-glow-pulse"
           >
             Start Your GlowUp Journey ✨
           </Button>
