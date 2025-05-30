@@ -10,6 +10,7 @@ import Onboarding from "./components/Onboarding";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import MoodTracker from "./components/MoodTracker";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,7 @@ const App = () => (
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/mood-tracker" element={<div className="min-h-screen bg-gradient-dark text-white flex items-center justify-center"><h1 className="text-2xl">Mood Tracker - Coming Soon! 😊</h1></div>} />
+          <Route path="/mood-tracker" element={<MoodTracker />} />
           <Route path="/profile-setup" element={<div className="min-h-screen bg-gradient-dark text-white flex items-center justify-center"><h1 className="text-2xl">Profile Setup - Coming Soon! 🎨</h1></div>} />
           <Route path="/chatbot" element={<div className="min-h-screen bg-gradient-dark text-white flex items-center justify-center"><h1 className="text-2xl">Chatbot Support - Coming Soon! 💬</h1></div>} />
           <Route path="/community" element={<div className="min-h-screen bg-gradient-dark text-white flex items-center justify-center"><h1 className="text-2xl">Community - Coming Soon! 👥</h1></div>} />
