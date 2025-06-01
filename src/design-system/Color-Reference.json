@@ -1,0 +1,56 @@
+
+{
+  "glowUpColorPalette": {
+    "primary": {
+      "glowPurple": "#A855F7",
+      "glowPink": "#F472B6", 
+      "glowCyan": "#22D3EE",
+      "glowYellow": "#FACC15",
+      "glowOrange": "#FB923C",
+      "glowGreen": "#4ADE80"
+    },
+    "neon": {
+      "neonPurple": "#C084FC",
+      "neonPink": "#F9A8D4",
+      "neonCyan": "#67E8F9", 
+      "neonYellow": "#FDE047"
+    },
+    "backgrounds": {
+      "darkBg": "#14141A",
+      "darkSurface": "#1C1C23", 
+      "darkCard": "#26262F"
+    },
+    "text": {
+      "primary": "#FAFAFA",
+      "muted": "#94A3B8"
+    }
+  },
+  "gradients": {
+    "primaryGlow": "linear-gradient(135deg, #A855F7, #F472B6)",
+    "darkGradient": "linear-gradient(135deg, #14141A, #26262F)",
+    "purpleToPink": "linear-gradient(135deg, #A855F7, #F472B6)",
+    "cyanToGreen": "linear-gradient(135deg, #22D3EE, #4ADE80)"
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px", 
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "2xl": "48px",
+    "3xl": "64px"
+  },
+  "borderRadius": {
+    "sm": "4px",
+    "md": "8px", 
+    "lg": "12px",
+    "xl": "16px",
+    "2xl": "24px",
+    "3xl": "32px"
+  },
+  "shadows": {
+    "glowPurple": "0 0 20px rgba(168, 85, 247, 0.4)",
+    "glowPurpleIntense": "0 0 30px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.6)",
+    "card": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+  }
+}
